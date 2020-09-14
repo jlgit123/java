@@ -1,0 +1,25 @@
+
+public class While {
+	public static void main(String[] args){
+		//循环输出1到100的数字
+		int i = 1;
+		while(i <= 100){
+			//获取变量i <= 100的计算结果，是true还是false，如果是true就执行while的大括号里面的代码，如果是false不执行
+			
+			System.out.println(i);
+			i++;//不断的改变变量i的值
+//			i = 101;
+		}
+
+		//与上面的while是等同的
+		for(int k = 1; k <= 100; k++){
+			
+		}
+		
+		int m = 1;
+		do{
+			System.out.println(m);
+			m++;
+		}while(m <= 100);
+	}
+}

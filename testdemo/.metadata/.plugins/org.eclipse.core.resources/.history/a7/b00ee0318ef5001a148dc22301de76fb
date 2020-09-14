@@ -1,0 +1,46 @@
+
+public class Test {
+	public static void main(String[] args){
+//		System.out.println("hello world!!!");
+		int i = 0;//声明并初始化变量
+		i = 1;
+		int k = 10;
+		i = k;
+		System.out.println(i);
+
+		short s = 9;
+		short sh = 11;
+		sh = s;
+		System.out.println(sh);
+		
+		byte b = 1;
+		int m = b ;
+		System.out.println(m);
+		
+		int in = 2;
+//		byte b2 = i2; //这种的异常叫做编译器异常，只有在javac的时候可以发现
+
+		int i0 = 1;
+		short s0 = 2; 
+		byte b0 = 3;
+		int res0 = i0 + s0 + b0;//问题，最后得到的数字6是什么类型？在计算过程中，i、s、b这3个变量会做数据类型的转换吗？
+		// 1. 在计算过程中，整数类型是int的范围最大，所以s0和b0都分别先转换为int类型然后进行加和运算，最终结果是int类型的数据
+		
+		char c1 = 'a'; //2. char类型的数据在与数字进行数字运算的时候，它是转换为相对应的ascll码的值然后再进行运算。
+		byte b1 = 1;
+		int res1 = c1 + b1;
+		System.out.println(res1);
+		
+		String str2 = "abc";
+		int i2 = 1;
+		System.out.println(str2+i2);
+		System.out.println(str2+i2+b1+s0+c1);
+		System.out.println(i2+b1+s0+c1+str2);
+
+		//3. 任何基本类型的值和字符串值进行连接运算时(+)，所有基本类型的值将自动转化为字符串类型。
+		//最前面有字符串在的话，所有类型都转成字符串。
+		//否则就是分布式计算，先算出前面的，再和字符串拼接起来。
+
+		System.out.println("12345");
+	}
+}

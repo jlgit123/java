@@ -1,0 +1,32 @@
+
+public class Test {
+	public static void main(String[] args){
+//		System.out.println("hello world!!!");
+		int i = 0;//声明并初始化变量
+		i = 1;
+		int k = 10;
+		i = k;
+		System.out.println(i);
+
+		short s = 9;
+		short sh = 11;
+		sh = s;
+		System.out.println(sh);
+		
+		byte b = 1;
+		int m = b ;
+		System.out.println(m);
+		
+		int in = 2;
+//		byte b2 = i2; //这种的异常叫做编译器异常，只有在javac的时候可以发现
+
+		int i0 = 1;
+		short s0 = 2; 
+		byte b0 = 3;
+		
+		byte res = i + s + b;//问题，最后得到的数字6是什么类型？在计算过程中，i、s、b这3个变量会做数据类型的转换吗？
+		
+		
+		System.out.println("12345");
+	}
+}

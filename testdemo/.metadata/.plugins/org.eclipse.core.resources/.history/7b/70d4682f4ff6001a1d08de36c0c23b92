@@ -1,0 +1,16 @@
+
+public class Wei {
+	public static void main(String[] args){
+		System.out.println(3<<3);//3 * 2^3
+		System.out.println(1<<2);//1 * 2^2
+		
+		System.out.println(8>>2);//8 / 2^2
+		System.out.println(8>>>2);
+		System.out.println(-8>>2);
+		System.out.println(-8>>>2);
+		// 有符号的右移是看右移之后的首位是0还是1，是0前面空位补0，是1就补1
+		// 无符号的右移，移动之后不管首位是0还是1，空位都是直接补0
+		System.out.println(~12);
+	}
+}
+ 

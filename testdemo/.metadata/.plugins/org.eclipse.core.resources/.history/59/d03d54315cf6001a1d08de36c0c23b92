@@ -1,0 +1,55 @@
+
+public class While {
+	public static void main(String[] args){
+//		//循环输出1到100的数字
+//		int i = 1;
+//		while(i <= 100){
+//			//获取变量i <= 100的计算结果，是true还是false，如果是true就执行while的大括号里面的代码，如果是false不执行
+//			
+//			System.out.println(i);
+//			i++;//不断的改变变量i的值
+////			i = 101;
+//		}
+//
+//		//与上面的while是等同的
+//		for(int k = 1; k <= 100; k++){
+//			
+//		}
+//		
+//		int m = 1;
+//		do{
+//			System.out.println(m);
+//			m++;
+//		}while(m <= 100);
+		
+		
+		
+		//求1到100之间所有偶数的和。用for和while语句分别完成
+		int res = 0;
+		for(int i = 1; i < 101; i++){
+			if(i % 2 == 0){
+				res += i;
+			}
+		}
+		System.out.println(res);//要在for循环之外输出最后的结果，因为只有全部循环技术完毕才有1到100之间所有偶数的和
+		
+		int res0 = 0;
+		int k = 1;
+		while(k <= 100){
+			if(k % 2 == 0){
+				res0 += k;
+			}
+			k++;
+		}
+		
+		System.out.println(res0);
+		
+//		for(;;){//for循环的无限循环
+//			
+//		}
+//		
+//		while(true){//while的无限循环
+//			
+//		}
+	}
+}

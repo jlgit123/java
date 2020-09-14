@@ -1,0 +1,6 @@
+package process;
+
+public class ShunXu {
+    int num1 = 12;
+    int num2 = num1 + 2;
+}

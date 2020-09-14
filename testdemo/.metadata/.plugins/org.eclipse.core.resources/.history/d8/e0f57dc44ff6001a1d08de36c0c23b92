@@ -1,0 +1,8 @@
+
+public class SanYuan {
+	public static void main(String[] args){
+		int i =-1;
+		int k = i > 0 ? 1 : 0;
+		System.out.println(k);
+	}
+}

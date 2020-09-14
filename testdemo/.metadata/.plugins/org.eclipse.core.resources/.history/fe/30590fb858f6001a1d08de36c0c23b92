@@ -1,0 +1,23 @@
+
+public class For {
+	public static void main(String[] args){
+		//连续输出5次helloworld
+		for(int i = 0;i<5;i++){
+			System.out.println(i);
+			System.out.println("hello world");
+		}
+//		//初始化变量，咱们这里的变量是i，判断i < 5，如果是，执行代码块{},执行更改表达式i++给i重新赋值，值就变为1
+//		//判断变量i < 5，当前的i是1，如果是，执行代码块{},执行更改表达式i++给i重新赋值，i值就变为2
+//		//判断变量i < 5，当前的i是2，如果是，执行代码块{},执行更改表达式i++给i重新赋值，i值就变为3
+//		//判断变量i < 5，当前的i是3，如果是，执行代码块{},执行更改表达式i++给i重新赋值，i值就变为4
+//		//判断变量i < 5，当前的i是4，如果是，执行代码块{},执行更改表达式i++给i重新赋值，i值就变为5
+//		//判断变量i < 5，当前的i是5，判断结果是false，不再往下执行，结束循环
+		int result = 0;
+        for(int i=1; i<=100; i++) {
+        	result += i;
+        }
+        System.out.println("result=" + result);
+
+
+	}
+}

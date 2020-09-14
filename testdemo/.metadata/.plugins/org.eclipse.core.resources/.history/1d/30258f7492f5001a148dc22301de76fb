@@ -1,0 +1,15 @@
+
+public class Test2 {
+	public static void main(String[] args){
+		int i0 = -3;
+		System.out.println(+i0);
+		System.out.println(-i0);
+
+		System.out.println(1 + 2);
+		System.out.println(7 / 2); 
+		//1. 当整数除以整数的时候，会把结果的小数部分舍弃，只保留整数部分
+		System.out.println(7.00 / 2); 
+
+
+	}
+}

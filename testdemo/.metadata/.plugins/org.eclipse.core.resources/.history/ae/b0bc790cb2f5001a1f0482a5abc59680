@@ -1,0 +1,27 @@
+
+public class LuoJi {
+	public static void main(String[] args){
+		System.out.println(4 == 4 & 1 == 1);
+		System.out.println(4 == 4 | 1 == 1);
+		System.out.println(4 == 4 ^ 1 == 1); //false
+		System.out.println(4 == 4 && 1 == 1);
+		System.out.println(4 == 4 || 1 == 1);
+		
+		// 1.区间判断
+		int x = 4;
+//		System.out.println(3 < x < 6);//java中不可以这样写
+		System.out.println(x > 3 && x < 6);//true  只能这样写
+
+		int i = 0;
+		int k = 1;
+//		System.out.println(++k ==2);//true
+		System.out.println(++i != 0 & ++k ==2);
+		System.out.println(k);//2
+		// 单个&时，两边都参与运算
+
+		System.out.println(++i != 0 && ++k ==2);
+		System.out.println(k);//3
+		// 2个&时，如果左边为true，右边参与运算；如果左边为false，右边不参与运算。
+
+	}
+}

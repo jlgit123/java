@@ -1,0 +1,14 @@
+
+public class SanYuan {
+	public static void main(String[] args){
+		int i =-1;
+		int k = i > 0 ? 1 : 0;
+		System.out.println(k);//0
+		
+		// 获取两个数中的较大数
+		int m = 1;
+		int n = 2;
+		System.out.println(m > n ? m : n);//2
+		
+	}
+}
